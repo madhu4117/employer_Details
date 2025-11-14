@@ -1,22 +1,22 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Button, Form, Input } from "antd";
-import styles from "./LoginForm.module.css";
+import styles from "./SignupForm.module.css";
 import axios from "axios";
 
-const LoginForm = () => {
+const SignupForm = () => {
   const navigate = useNavigate();
   const onFinish = async (values) => {
     try {
       console.log("These are the values sent from Frontend", values);
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "http://localhost:5000/api/auth/signup",
         values
       );
       localStorage.setItem("token", response.data.token);
-      console.log("These are the values received from Backend", response.data.user);
+      console.log("These are the values received from Backend",response.data.user);
       navigate("/dashboard");
     } catch (error) {
-      console.log("Error loging in", error);
+      console.log("Error signing up", error);
     }
   };
 
@@ -25,7 +25,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className={styles.LoginForm}>
+    <div className={styles.SignupForm}>
       <Form
         name="basic"
         initialValues={{ remember: true }}
@@ -50,18 +50,23 @@ const LoginForm = () => {
           <Input.Password />
         </Form.Item>
 
+        <Form.Item
+          label="Confirm Password"
+          name="confirmPassword"
+          rules={[{ required: true, message: "Please confirm your password!" }]}
+        >
+          <Input.Password />
+        </Form.Item>
+
         <div className={styles.linksRow}>
-          <Link to="/forgot-password" className={styles.forgotPassword}>
-            Forgot Password
-          </Link>
-          <Link to="/signup" className={styles.register}>
-            Don't have account? <span>Sign up</span>
+          <Link to="/login" className={styles.register}>
+            Already a user? <span>Login</span>
           </Link>
         </div>
 
         <Form.Item label={null}>
           <Button type="primary" htmlType="submit">
-            Login
+            Signup
           </Button>
         </Form.Item>
       </Form>
@@ -69,4 +74,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default SignupForm;
