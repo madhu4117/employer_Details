@@ -1,4 +1,4 @@
-.loginPage {
+.signup {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -15,7 +15,7 @@
     object-fit: cover;
 }
 
-.loginDetailsSection {
+.signupDetailsSection {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -25,18 +25,18 @@
     background-color: #fff;
 }
 
-.loginFormSection {
+.signupFormSection {
     width: 100%;
 }
 
-.loginFormSection h1 {
+.signupFormSection h1 {
     font-family: "Roboto", sans-serif;
     color: #545252;
     line-height: 40px;
     margin-bottom: 50px;
 }
 
-.loginFormSection h1 span {
+.signupFormSection h1 span {
     display: block;
     color: #44448b;
 }
@@ -50,11 +50,11 @@
 
 /*ipad Air portrait*/
 @media(min-width: 768px) and (max-width: 1023px) {
-    .loginDetailsSection {
+    .signupDetailsSection {
         padding: 0px 30px;
     }
 
-    .loginFormSection h1 {
+    .signupFormSection h1 {
         font-size: 25px;
         margin-bottom: 20px;
     }
@@ -62,7 +62,7 @@
 
 /*mobile landscape*/
 @media(min-width: 667px) and (max-width: 767px) {
-    .loginPage {
+    .signup {
         flex-direction: column;
         height: 100vh;
     }
@@ -72,7 +72,7 @@
         flex: 0;
     }
 
-    .loginDetailsSection {
+    .signupDetailsSection {
         flex: 1;
         display: flex;
         justify-content: center;
@@ -83,12 +83,12 @@
         overflow-y: auto;
     }
 
-    .loginFormSection {
+    .signupFormSection {
         width: 100%;
         padding-top: 10px;
     }
 
-    .loginFormSection h1 {
+    .signupFormSection h1 {
         text-align: center;
         font-size: 18px;
         line-height: 24px;
@@ -98,7 +98,7 @@
 
 /*mobile portrait*/
 @media(max-width: 666px) {
-    .loginPage {
+    .signup {
         flex-direction: column;
     }
 
@@ -107,7 +107,7 @@
         flex: 0;
     }
 
-    .loginDetailsSection {
+    .signupDetailsSection {
         flex: 1;
         display: flex;
         justify-content: center;
@@ -117,7 +117,7 @@
         box-sizing: border-box;
     }
 
-    .loginFormSection h1 {
+    .signupFormSection h1 {
         text-align: center;
         font-size: 25px;
     }

@@ -1,4 +1,4 @@
-.LoginForm {
+.SignupForm {
     font-family: Arial, sans-serif;
 }
 
@@ -67,6 +67,7 @@
 :global(.ant-input-password .ant-input:focus) {
     border: none !important;
     border-bottom: 2px solid #44448B !important;
+    /* focus color */
     box-shadow: none !important;
     background: transparent !important;
     outline: none !important;
@@ -113,10 +114,6 @@
 .linksRow a {
     color: #545252 !important;
     text-decoration: none;
-}
-
-.linksRow .forgotPassword:hover {
-    color: #0000EE;
 }
 
 /* Register / signup text */
