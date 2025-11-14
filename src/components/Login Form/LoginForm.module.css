@@ -1,0 +1,146 @@
+.LoginForm {
+    font-family: Arial, sans-serif;
+}
+
+/* Form item spacing */
+:global(.ant-form-item) {
+    margin-bottom: 40px;
+}
+
+/* Labels */
+:global(.ant-form-item-label) {
+    display: block !important;
+    padding-bottom: 8px !important;
+}
+
+:global(.ant-form-item-label > label),
+:global(.ant-form-item-label > label span) {
+    color: #545252 !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+
+/* Remove required asterisk */
+:global(.ant-form-item-required)::before,
+:global(.ant-form-item-required)::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Input styles - text and password inputs */
+:global(.ant-input),
+:global(.ant-input-password .ant-input) {
+    border: none !important;
+    border-bottom: 1px solid #000 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Password input wrapper */
+:global(.ant-input-password),
+:global(.ant-input-password-focused),
+:global(.ant-input-password:hover) {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* Password eye icon / suffix */
+:global(.ant-input-password-icon),
+:global(.ant-input-suffix) {
+    display: none !important;
+}
+
+/* Hover state - bottom border only */
+:global(.ant-input:hover),
+:global(.ant-input-password .ant-input:hover) {
+    border: none !important;
+    border-bottom: 1px solid #000 !important;
+    background: transparent !important;
+}
+
+/* Focus state - bottom border only */
+:global(.ant-input:focus),
+:global(.ant-input-password .ant-input:focus) {
+    border: none !important;
+    border-bottom: 2px solid #44448B !important; /* focus color */
+    box-shadow: none !important;
+    background: transparent !important;
+    outline: none !important;
+}
+
+/* Error state - bottom border red only */
+:global(.ant-form-item-has-error .ant-input),
+:global(.ant-form-item-has-error .ant-input-password .ant-input) {
+    border: none !important;
+    border-bottom: 1px solid #ff4d4f !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Error state on focus */
+:global(.ant-form-item-has-error .ant-input:focus),
+:global(.ant-form-item-has-error .ant-input-password .ant-input:focus) {
+    border: none !important;
+    border-bottom: 2px solid #ff4d4f !important;
+    box-shadow: none !important;
+}
+
+/* Error message styling */
+:global(.ant-form-item-explain-error) {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Checkbox row */
+.checkbox-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+/* Links row */
+.linksRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 45px 0;
+}
+
+.linksRow a {
+    color: #545252 !important;
+    text-decoration: none;
+}
+
+.linksRow .forgotPassword:hover {
+    color: #0000EE;
+}
+
+/* Register / signup text */
+.register span {
+    color: #44448B;
+    font-weight: 500;
+}
+
+/* Submit button */
+:global(.ant-btn-primary) {
+    width: 100%;
+    background-color: #44448B;
+    border: none;
+    border-radius: 2px;
+    padding: 20px 0;
+    font-size: 15px;
+    color: #fff;
+}
+
+:global(.ant-btn-primary:hover),
+:global(.ant-btn-primary:focus),
+:global(.ant-btn-primary:active) {
+    background-color: #44448B !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}

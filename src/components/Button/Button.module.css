@@ -1,0 +1,10 @@
+.button {
+    background-color: transparent;
+    border: 1px solid #44448B;
+    color: #44448B;
+    padding: 6px 18px;
+    margin: 15px 0px 15px 0px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
